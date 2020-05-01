@@ -1,4 +1,5 @@
 function calculator(maintenance, tax, insurance, value, futureValue, fuel) {
-  return (maintenance + tax + insurance + fuel) / 12;
+  const annualDepreciation = value - futureValue;
+  return (maintenance + tax + insurance + fuel + annualDepreciation) / 12;
 }
 module.exports = calculator;
