@@ -1,8 +1,6 @@
 function calculator(maintenance, tax, insurance, value, futureValue, fuel) {
-  const annualDepreciation = value - futureValue;
-  var monthlyCostCalculation =
-    (maintenance + tax + insurance + fuel + annualDepreciation) / 12;
-  var monthlyCostCalculation = Math.round(monthlyCostCalculation);
-  return monthlyCostCalculation;
+  return Math.round(
+    (maintenance + tax + insurance + fuel + value - futureValue) / 12
+  );
 }
 module.exports = calculator;
