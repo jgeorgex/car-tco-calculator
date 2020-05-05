@@ -9,25 +9,30 @@
   <body>
     Car Monthly Total Cost of Ownership Estimation Calulator <br />
     <br />
-    <form action="/">
+    <form id="form" class="form">
       <label for="maintenance">Annual Servicing and Maintenance Cost:</label
       ><br />
       <input
-        type="text"
+        type="number"
         id="maintenance"
         name="maintenance"
         value=""
       /><br /><br />
 
       <label for="tax">Annual Car Tax Cost:</label><br />
-      <input type="text" id="insurance" name="insurance" value="" /><br /><br />
+      <input type="number" id="tax" name="tax" value="" /><br /><br />
 
       <label for="insurance">Annual Insurance Cost:</label><br />
-      <input type="text" id="insurance" name="insurance" value="" /><br /><br />
+      <input
+        type="number"
+        id="insurance"
+        name="insurance"
+        value=""
+      /><br /><br />
 
       <label for="todays-value">Value of car today:</label><br />
       <input
-        type="text"
+        type="number"
         id="todays-value"
         name="todays-value"
         value=""
@@ -35,19 +40,21 @@
 
       <label for="future-value">Expected value of car in one year:</label><br />
       <input
-        type="text"
+        type="number"
         id="future-value"
         name="future-value"
         value=""
       /><br /><br />
 
       <label for="fuel">Annual Fuel Cost:</label><br />
-      <input type="text" id="fuel" name="fuel" value="" /><br /><br />
+      <input type="number" id="fuel" name="fuel" value="" /><br /><br />
 
       <input type="submit" value="Submit" />
     </form>
     <br />
+    <p id="result"><RESULT/p></p>
     <p>Your estimated total cost of monthly ownership is £000</p>
+
     <script src="calculator.js"></script>
   </body>
 </html>
