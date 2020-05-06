@@ -1,12 +1,13 @@
 document.getElementById('form').addEventListener('submit', calculator);
 
 function calculator(e) {
-  const maintenance = document.getElementById('maintenance').value;
-  const tax = document.getElementById('tax').value;
-  const insurance = document.getElementById('insurance').value;
-  const todaysValue = document.getElementById('todays-value').value;
-  const futureValue = document.getElementById('future-value').value;
-  const fuel = document.getElementById('fuel').value;
+  const maintenance = parseInt(document.getElementById('maintenance').value);
+  const tax = parseInt(document.getElementById('tax').value);
+  const insurance = parseInt(document.getElementById('insurance').value);
+  const todaysValue = parseInt(document.getElementById('todays-value').value);
+  const futureValue = parseInt(document.getElementById('future-value').value);
+  const fuel = parseInt(document.getElementById('fuel').value);
+  const tco = maintenance + tax;
 
   console.log(maintenance);
   console.log(tax);
@@ -14,15 +15,13 @@ function calculator(e) {
   console.log(todaysValue);
   console.log(futureValue);
   console.log(fuel);
+  console.log(tco);
 
-  function runCalculation() {
-    const tco = Math.round(
-      (maintenance + tax + insurance + fuel + value - futureValue) / 12
-    );
-    console.log(tco);
-    document.getElementById('result').innerHTML = tco;
-  }
-  runCalculation();
+  // function runCalculation() {
+
+  //   document.getElementById('result').innerHTML = tco;
+  // }
+  // runCalculation();
   e.preventDefault();
 }
 
@@ -39,4 +38,4 @@ function calculator(e) {
 //   console.log(value);
 // });
 
-module.exports = calculator;
+// module.exports = calculator;
