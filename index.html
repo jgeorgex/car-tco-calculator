@@ -49,12 +49,11 @@
       <label for="fuel">Annual Fuel Cost:</label><br />
       <input type="number" id="fuel" name="fuel" value="" /><br /><br />
 
-      <input type="submit" value="Submit" />
+      <button value="Submit" onclick="runCalculator(event)">Submit</button>
     </form>
     <br />
-    <p id="result"><RESULT/p></p>
-    <p>Your estimated total cost of monthly ownership is £000</p>
-
+    <p>Your monthly running cost is...</p>
+    <p id="result"></p>
     <script src="runCalculator.js"></script>
     <script src="calculator.js"></script>
   </body>
