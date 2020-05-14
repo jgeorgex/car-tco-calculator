@@ -4,4 +4,4 @@ function calculator(maintenance, tax, insurance, value, futureValue, fuel) {
   );
 }
 
-// module.exports = calculator;
+module.exports = calculator;

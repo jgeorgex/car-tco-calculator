@@ -2,9 +2,13 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.8.2"
+  },
   "devDependencies": {
-    "cypress": "^4.5.0"
+    "cypress": "^4.5.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   },
   "name": "car-tco-calculator",
   "description": "A calulator to estimate the monthly total cost of ownership for a car.",
