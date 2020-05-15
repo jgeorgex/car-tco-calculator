@@ -16,53 +16,57 @@
     <title>Car Monthly Total Cost of Ownership Estimation Calulator</title>
   </head>
   <body>
-    Car Monthly Total Cost of Ownership Estimation Calulator <br />
-    <br />
-    <form id="form" class="form">
-      <label for="maintenance">Annual Servicing and Maintenance Cost:</label
-      ><br />
-      <input
-        type="number"
-        id="maintenance"
-        name="maintenance"
-        value=""
-      /><br /><br />
-
-      <label for="tax">Annual Car Tax Cost:</label><br />
-      <input type="number" id="tax" name="tax" value="" /><br /><br />
-
-      <label for="insurance">Annual Insurance Cost:</label><br />
-      <input
-        type="number"
-        id="insurance"
-        name="insurance"
-        value=""
-      /><br /><br />
-
-      <label for="todays-value">Value of car today:</label><br />
-      <input
-        type="number"
-        id="todays-value"
-        name="todays-value"
-        value=""
-      /><br /><br />
-
-      <label for="future-value">Expected value of car in one year:</label><br />
-      <input
-        type="number"
-        id="future-value"
-        name="future-value"
-        value=""
-      /><br /><br />
-
-      <label for="fuel">Annual Fuel Cost:</label><br />
-      <input type="number" id="fuel" name="fuel" value="" /><br /><br />
-
-      <button value="Submit" onclick="runCalculator(event)">Submit</button>
-    </form>
-    <br />
-    <p>Your monthly running cost is...</p>
-    <p id="result"></p>
+    <section class="hero is-fullheight has-background-black">
+      <div class="hero-body">
+        <div class="container">
+            Car Monthly Total Cost of Ownership Estimation Calulator
+            <br />
+            <br />
+            <form id="form" class="form">
+              <label for="maintenance">Annual Servicing and Maintenance Cost:</label
+              ><br />
+              <input
+                type="number"
+                id="maintenance"
+                name="maintenance"
+                value=""
+              /><br /><br />
+        
+              <label for="tax">Annual Car Tax Cost:</label><br />
+              <input type="number" id="tax" name="tax" value="" /><br /><br />
+        
+              <label for="insurance">Annual Insurance Cost:</label><br />
+              <input
+                type="number"
+                id="insurance"
+                name="insurance"
+                value=""
+              /><br /><br />
+        
+              <label for="todays-value">Value of car today:</label><br />
+              <input
+                type="number"
+                id="todays-value"
+                name="todays-value"
+                value=""
+              /><br /><br />
+        
+              <label for="future-value">Expected value of car in one year:</label><br />
+              <input
+                type="number"
+                id="future-value"
+                name="future-value"
+                value=""
+              /><br /><br />
+              <label for="fuel">Annual Fuel Cost:</label><br />
+              <input type="number" id="fuel" name="fuel" value="" /><br /><br />    
+              <button value="Submit" onclick="runCalculator(event)">Submit</button>
+            </form>
+            <br />
+            <p>Your monthly running cost is...</p>
+            <p id="result"></p>
+      </div>
+    </section>
     <script src="runCalculator.js"></script>
     <script src="calculator.js"></script>
   </body>
