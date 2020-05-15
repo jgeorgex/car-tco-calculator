@@ -28,13 +28,13 @@
     <section class="hero is-fullheight has-background-black">
       <div class="hero-body">
         <div class="container">
-            <div class="container center">
+            <div class="container center has-text-white">
                 Car Monthly Total Cost of Ownership Estimation Calculator
             <br />
             <br />
             </div>
 
-            <figure form id="form" class="form">
+            <figure form id="form" class="form has-text-white">
               <label for="maintenance">Annual Servicing and Maintenance Cost:</label
               ><br />
               <input
@@ -75,8 +75,11 @@
               <button value="Submit" onclick="runCalculator(event)">Submit</button>
             </figure>
             <br />
+            <div class="container has-text-white">
             <p>Your monthly running cost is...</p>
             <p id="result"></p>
+            </div>
+
       </div>
     </section>
     <script src="runCalculator.js"></script>
