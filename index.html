@@ -15,12 +15,12 @@
     <!-- <link rel="stylesheet" href="styles/debug.css" /> -->
 
     <style>
-    .center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
 
     <title>Car Monthly Total Cost of Ownership Estimation Calculator</title>
   </head>
@@ -28,61 +28,150 @@
     <section class="hero is-fullheight has-background-black">
       <div class="hero-body">
         <div class="container">
-            <div class="container center has-text-white">
-                Car Monthly Total Cost of Ownership Estimation Calculator
+          <div class="container center has-text-white">
+            Car Monthly Total Cost of Ownership Estimation Calculator
             <br />
             <br />
+          </div>
+
+          <figure form id="form" class="form has-text-white">
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="maintenance" class="label"
+                  >What is your annual servicing and maintenance cost?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="maintenance"
+                      name="maintenance"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
 
-            
-            <figure form id="form" class="form has-text-white">
-
-            <figure form id="form" class="form has-text-white">
-                <label for="maintenance">What is your annual servicing and maintenance cost?</label>
-                <input
-                  type="number"
-                  id="maintenance"
-                  name="maintenance"
-                  value=""
-                /><br /><br />
-           
-
-              <label for="tax">What is your annual car tax cost? </label>
-              <input type="number" id="tax" name="tax" value="" /><br /><br />
-        
-              <label for="insurance">What is your annual insurance cost:?</label>
-              <input
-                type="number"
-                id="insurance"
-                name="insurance"
-                value=""
-              /><br /><br />
-        
-              <label for="todays-value">What is your car worth today?</label>
-              <input
-                type="number"
-                id="todays-value"
-                name="todays-value"
-                value=""
-              /><br /><br />
-        
-              <label for="future-value">What do you think your car will be worth one year from now?</label>
-              <input
-                type="number"
-                id="future-value"
-                name="future-value"
-                value=""
-              /><br /><br />
-              <label for="fuel">How much do you spend on fuel in a year?</label>
-              <input type="number" id="fuel" name="fuel" value="" /><br /><br />    
-              <button value="Submit" onclick="runCalculator(event)">Submit</button>
-            </figure>
-            <br />
-            <div class="container has-text-white">
-            <p>Your monthly running cost is...</p>
-            <p id="result"></p>
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="tax" class="label"
+                  >What is your annual car tax cost?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="tax"
+                      name="tax"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
 
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="insurance" class="label"
+                  >What is your annual insurance cost?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="insurance"
+                      name="insurance"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="todays-value" class="label"
+                  >What is your car worth today?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="todays-value"
+                      name="todays-value"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="future-value" class="label"
+                  >What do you think your car will be worth one year from
+                  today?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="future-value"
+                      name="future-value"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label for="fuel" class="label"
+                  >How much do you spend on fuel in a year?</label
+                >
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-medium"
+                      type="number"
+                      id="fuel"
+                      name="fuel"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button value="Submit" onclick="runCalculator(event)">
+              Submit
+            </button>
+          </figure>
+          <br />
+          <div class="container has-text-white">
+              <p>Your monthly running cost is...</p>
+              <p id="result"></p>
+              </div>  
+        
       </div>
     </section>
     <script src="runCalculator.js"></script>
