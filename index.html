@@ -24,10 +24,12 @@
 
     <title>Car Monthly Total Cost of Ownership Estimation Calculator</title>
   </head>
+
+  
   <body>
     <section class="hero is-fullheight has-background-black">
       <div class="hero-body">
-        <div class="container">
+        <div class="title container">
           <div class="container center has-text-white">
             Car Monthly Total Cost of Ownership Estimation Calculator
             <br />
@@ -37,8 +39,8 @@
           <figure form id="form" class="form has-text-white">
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="maintenance" class="label"
-                  >What is your annual servicing and maintenance cost?</label
+                <label for="maintenance" class="label has-text-white"
+                  >Maintenance</label
                 >
               </div>
               <div class="field-body">
@@ -49,6 +51,7 @@
                       type="number"
                       id="maintenance"
                       name="maintenance"
+                      placeholder="Enter the annual cost for servicing and maintenance"
                       value=""
                     />
                   </div>
@@ -58,8 +61,8 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="tax" class="label"
-                  >What is your annual car tax cost?</label
+                <label for="tax" class="label has-text-white"
+                  >Tax</label
                 >
               </div>
               <div class="field-body">
@@ -70,6 +73,7 @@
                       type="number"
                       id="tax"
                       name="tax"
+                      placeholder="Enter your cars annual tax cost"
                       value=""
                     />
                   </div>
@@ -79,8 +83,8 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="insurance" class="label"
-                  >What is your annual insurance cost?</label
+                <label for="insurance" class="label has-text-white"
+                  >Insurance</label
                 >
               </div>
               <div class="field-body">
@@ -91,6 +95,7 @@
                       type="number"
                       id="insurance"
                       name="insurance"
+                      placeholder="Enter your cars annual insurance cost"
                       value=""
                     />
                   </div>
@@ -100,8 +105,8 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="todays-value" class="label"
-                  >What is your car worth today?</label
+                <label for="todays-value" class="label has-text-white"
+                  >Current value</label
                 >
               </div>
               <div class="field-body">
@@ -112,6 +117,7 @@
                       type="number"
                       id="todays-value"
                       name="todays-value"
+                      placeholder="Enter what your car is worth today"
                       value=""
                     />
                   </div>
@@ -121,9 +127,8 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="future-value" class="label"
-                  >What do you think your car will be worth one year from
-                  today?</label
+                <label for="future-value" class="label has-text-white"
+                  >Future value</label
                 >
               </div>
               <div class="field-body">
@@ -134,6 +139,7 @@
                       type="number"
                       id="future-value"
                       name="future-value"
+                      placeholder="Enter what your car will be worth in one years time"
                       value=""
                     />
                   </div>
@@ -143,8 +149,8 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="fuel" class="label"
-                  >How much do you spend on fuel in a year?</label
+                <label for="fuel" class="label has-text-white"
+                  >Fuel</label
                 >
               </div>
               <div class="field-body">
@@ -155,6 +161,7 @@
                       type="number"
                       id="fuel"
                       name="fuel"
+                      placeholder="Enter how much you will spend on fuel in the next year"
                       value=""
                     />
                   </div>
@@ -162,7 +169,7 @@
               </div>
             </div>
 
-            <button value="Submit" onclick="runCalculator(event)">
+            <button class="button is-light is-center" value="Submit" onclick="runCalculator(event)">
               Submit
             </button>
           </figure>
@@ -171,8 +178,9 @@
               <p>Your monthly running cost is...</p>
               <p id="result"></p>
               </div>  
-        
-      </div>
+
+  </div>
+
     </section>
     <script src="runCalculator.js"></script>
     <script src="calculator.js"></script>
