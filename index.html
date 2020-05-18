@@ -25,9 +25,8 @@
     <title>Car Monthly Total Cost of Ownership Estimation Calculator</title>
   </head>
 
-  
   <body>
-    <section class="hero is-fullheight has-background-black">
+    <section class="hero is-fullheight has-background-info">
       <div class="hero-body">
         <div class="title container">
           <div class="container center has-text-white">
@@ -61,9 +60,7 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="tax" class="label has-text-white"
-                  >Tax</label
-                >
+                <label for="tax" class="label has-text-white">Tax</label>
               </div>
               <div class="field-body">
                 <div class="field">
@@ -149,9 +146,7 @@
 
             <div class="field is-horizontal">
               <div class="field-label is-medium">
-                <label for="fuel" class="label has-text-white"
-                  >Fuel</label
-                >
+                <label for="fuel" class="label has-text-white">Fuel</label>
               </div>
               <div class="field-body">
                 <div class="field">
@@ -169,17 +164,19 @@
               </div>
             </div>
 
-            <button class="button is-white is-large is-rounded" value="Submit" onclick="runCalculator(event)">
-              Submit
+            <button
+              class="button is-info is-inverted is-medium is-rounded"
+              value="Submit"
+              onclick="runCalculator(event)"
+            >
+              Get monthly running cost
             </button>
           </figure>
           <br />
           <div class="container has-text-white">
-              <p>Your monthly running cost is...£<is id="result"></is></p>
-              </div>  
-
-  </div>
-
+            <p>Your monthly running cost is...£<is id="result"></is></p>
+          </div>
+      </div>
     </section>
     <script src="runCalculator.js"></script>
     <script src="calculator.js"></script>
