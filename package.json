@@ -3,7 +3,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "bulma": "^0.8.2"
+    "bulma": "^0.8.2",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "cypress": "^4.5.0",
