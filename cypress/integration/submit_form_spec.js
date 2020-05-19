@@ -1,6 +1,6 @@
 describe('Submit form to get result test', () => {
   it('returns a result of 4', () => {
-    cy.visit('http://127.0.0.1:5500/index.html');
+    cy.visit('http://localhost:8080/');
     cy.get('input[name=maintenance]').type(`12`);
     cy.get('input[name=tax]').type(`12`);
     cy.get('input[name=insurance]').type(`12`);
