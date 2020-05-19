@@ -1,4 +1,4 @@
-const calculator = require('../calculator');
+const calculator = require('../scripts/calculator');
 
 test('calulates monthly cost with maintainance input', () => {
   expect(calculator(12, 0, 0, 0, 0, 0)).toBe(1);
