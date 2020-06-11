@@ -1,8 +1,10 @@
 ## Car Monthly Total Cost of Ownership Estimation Calulator
 
+![Travis Status Image](https://travis-ci.com/jgeorgex/car-tco-calculator.svg?branch=master)
+
 A calculator to estimate the monthly total cost of ownership for a car.
 
-Built using JavaScript, Jest, Cypress, HTML, CSS, Bulma, Node, Express, Heroku and Visual Studio Code.
+Built using JavaScript, Jest, Cypress, HTML, CSS, Bulma, Node, Express, Heroku, Travis CI and Visual Studio Code.
 
 This project is deployed at https://car-tco-calculator.herokuapp.com/
 
