@@ -1,6 +1,6 @@
 ## Car Monthly Total Cost of Ownership Estimation Calulator
 
-A calulator to estimate the monthly total cost of ownership for a car.
+A calculator to estimate the monthly total cost of ownership for a car.
 
 Built using JavaScript, Jest, Cypress, HTML, CSS, Bulma, Node, Express, Heroku and Visual Studio Code.
 
