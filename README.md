@@ -40,4 +40,3 @@ This will open up Cypress and display a list of tests that you can run. You can 
 
 1. Refactor bulma styling implementation.
 2. Return error message if no inputs are entered before submitting form.
-3. Introduce CI.
