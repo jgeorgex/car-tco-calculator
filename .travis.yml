@@ -4,5 +4,5 @@ node_js:
 
 install: npm install
 script:
-  - npm start & wait-on http://localhost:8080
+  - npm start
   - cypress run
