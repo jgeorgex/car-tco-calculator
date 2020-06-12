@@ -1,6 +1,6 @@
 ## Car Monthly Total Cost of Ownership Estimation Calulator
 
-![Travis Status Image](https://travis-ci.com/jgeorgex/car-tco-calculator.svg?branch=master)
+[![Build Status](https://travis-ci.org/jgeorgex/car-tco-calculator.svg?branch=master)](https://travis-ci.org/jgeorgex/car-tco-calculator)
 
 A calculator to estimate the monthly total cost of ownership for a car.
 
